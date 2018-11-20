@@ -38,13 +38,25 @@ const data = {
 // });
 
 // Put request to update a post
-http.put('https://jsonplaceholder.typicode.com/posts/5', data, function(
+// http.put('https://jsonplaceholder.typicode.com/posts/5', data, function(
+//   err,
+//   post
+// ) {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log(post);
+//   }
+// });
+
+// Delete post
+http.delete('http://jsonplaceholder.typicode.com/posts/1', function(
   err,
-  post
+  response
 ) {
   if (err) {
     console.log(err);
   } else {
-    console.log(post);
+    console.log(response);
   }
 });
