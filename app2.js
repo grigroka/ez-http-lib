@@ -1,7 +1,7 @@
 'use strict';
 const http = new EasyHTTP();
 
-// Get users
+// Get users GET
 // http
 //   .get('https://jsonplaceholder.typicode.com/users')
 //   .then(data => console.log(data))
@@ -14,20 +14,20 @@ const data = {
   email: 'jdoe@gmail.com'
 };
 
-// Create user
+// Create user POST
 // http
 //   .post('https://jsonplaceholder.typicode.com/users', data)
 //   .then(data => console.log(data))
 //   .catch(err => console.log(err));
 
-// Update user
+// Update user PUT
 // http
 //   .put('https://jsonplaceholder.typicode.com/users/2', data)
 //   .then(data => console.log(data))
 //   .catch(err => console.log(err));
 
-// Delete users
-http
-  .delete('https://jsonplaceholder.typicode.com/users/2')
-  .then(data => console.log(data))
-  .catch(err => console.log(err));
+// Delete users DELETE
+// http
+//   .delete('https://jsonplaceholder.typicode.com/users/2')
+//   .then(data => console.log(data))
+//   .catch(err => console.log(err));
