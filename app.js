@@ -24,8 +24,21 @@ const data = {
   title: 'Custom Post',
   body: 'This is a custom post'
 };
+
 // Post request to create a post
-http.post('https://jsonplaceholder.typicode.com/posts', data, function(
+// http.post('https://jsonplaceholder.typicode.com/posts', data, function(
+//   err,
+//   post
+// ) {
+//   if (err) {
+//     console.log(err);
+//   } else {
+//     console.log(post);
+//   }
+// });
+
+// Put request to update a post
+http.put('https://jsonplaceholder.typicode.com/posts/5', data, function(
   err,
   post
 ) {
